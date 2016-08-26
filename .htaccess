@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+errorDocument 400 http://localhost:8088/projects/petlane/error
+errorDocument 401 http://localhost:8088/projects/petlane/error
+errorDocument 404 http://localhost:8088/projects/petlane/error
+errorDocument 500 http://localhost:8088/projects/petlane/error
